@@ -8,10 +8,6 @@ var fs        = require('fs')
   , db        = {}
 
 
-  // Object.keys(config).forEach(key => {
-  //     config[key].host = process.env.JAWSDB_URL;
-  // });
-
   if (config.use_env_variable) {
     var sequelize = new Sequelize(process.env[config.use_env_variable]);
   } else {

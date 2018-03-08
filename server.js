@@ -10,7 +10,7 @@
 	,  passportConfig = require('./config/passport')
 	,  home = require('./routes/home')
 	,  application = require('./routes/application')
-const PORT = process.env.PORT || 3002;
+
 
 
 // Pull in the public directory
@@ -23,7 +23,7 @@ app.set('views', __dirname + '/views')
 SALT_WORK_FACTOR = 12
 
 // configuration
-// app.set('port', process.env.JAWSDB_URL || 8080)
+app.set('port', process.env.PORT || 8080)
 app.use(express.urlencoded())
 app.use(express.bodyParser())
 app.use(express.cookieParser() );
@@ -85,10 +85,8 @@ db
 		 	};
 		});
 	
-    app.listen(PORT, (err) => {
-      if(!err) {
-        console.log('listening on port #' + PORT);
-      }
-    });
+      http.createServer(app).listen(app.get('port'), function(){
+        console.log('Express server listening on port ' + app.get('port'))
+      })
     }
   })

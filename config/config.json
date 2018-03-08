@@ -1,18 +1,23 @@
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "sequelize_passport11",
+    "password": "1234",
+    "database": "jobzone",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
     "password": "1234",
     "database": "sequelize_passport11",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "production": {
-    "use_env_variable":"JAWSDB_URL",
+    "username": "root",
+    "password": "1234",
+    "database": "sequelize_passport11",
+    "host": "localhost",
     "dialect": "mysql"
   }
 }
