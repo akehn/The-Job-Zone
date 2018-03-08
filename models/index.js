@@ -3,12 +3,17 @@ var fs        = require('fs')
   , Sequelize = require('sequelize')
   , lodash    = require('lodash')
   , sequelize = new Sequelize('goatjs', 'root', null)
-  , env       = process.env.NODE_ENV || 'production'
+  , env       = process.env.NODE_ENV || 'development'
   , config    = require(__dirname + '/../config/config.json')[env]
   , db        = {}
 
-  if (process.env.JAWSDB_URL) {
-    var sequelize = new Sequelize(process.env[process.env.JAWSDB_URL]);
+
+  // Object.keys(config).forEach(key => {
+  //     config[key].host = process.env.JAWSDB_URL;
+  // });
+
+  if (config.use_env_variable) {
+    var sequelize = new Sequelize(process.env[config.use_env_variable]);
   } else {
     var sequelize = new Sequelize(config.database, config.username, config.password, config);
   }
