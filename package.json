@@ -1,0 +1,19 @@
+{
+  "name": "goat.js",
+  "description": "A job site like AngList... but better",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "bcrypt-nodejs": "latest",
+    "ejs": "1.x",
+    "express": "3.x",
+    "lodash": "latest",
+    "mysql": "~2.3.2",
+    "mysql2": "^1.5.2",
+    "node-gyp": "latest",
+    "passport": "latest",
+    "passport-local": "latest",
+    "password": "latest",
+    "sequelize": "~1.7.8"
+  }
+}

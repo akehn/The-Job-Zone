@@ -1,0 +1,136 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+nav
+{
+  background-color: #212121;
+
+}
+
+a {
+  color: white;
+}
+
+#logo2
+{
+  width: 140px;
+}
+
+#login, #signup
+{
+  padding: 0 15px;
+}
+
+/* Home Section */
+.home{
+  background: url(/public/images/homebg.jpg) no-repeat center left;
+  background-size:cover;
+}
+.home_overlay{
+  background:rgba(176, 186, 186, 0.44);
+}
+
+form, input
+{
+  width: 68%;
+  margin-left: 15%;
+  font-size: 20px;
+
+}
+label{
+  font-size: 18px;
+}
+
+.button-container form,
+.button-container form div {
+  display:inline-block;
+}
+
+.button-container button {
+  display:inline-block;
+    vertical-align: middle;
+}
+
+#login:hover {
+  cursor: pointer;
+}
+
+#signup:hover {
+  cursor: pointer;
+}
+
+#modal-overlay 
+{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  background-color: black;
+  opacity: 0.6;
+}
+
+#modal-overlay1 
+{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  background-color: black;
+  opacity: 0.6;
+}
+
+.modal-hidden
+{
+  display: none;
+}
+
+#modal-container,
+#modal-container1
+{
+  position: fixed;
+  top: calc(30vh/2);
+  left: calc(40vw/2);
+  width: 50vw;
+  height: 50vh;
+  z-index: 2;
+  background-color: white;
+  align-items: center;
+  border: 5px solid #43a047;
+  font-family: 'Muli', sans-serif;
+  
+}
+
+#logo-modal{
+  /* width: 49.5vw;  */
+  width:100%;
+  background-color:black; 
+  /* margin-left: -86px; */
+}
+
+#logo-pages .img
+{
+width: 16%;
+}
+
+#main-content1
+{
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+}
+
+
+
+
